@@ -157,7 +157,7 @@ Python, scikit-learn, PyTorch, torchvision, OpenCV, scikit-image, pandas, matplo
 - analiza na `challenges.csv` (07): evaluacija sva 4 modela na held-out skupu, pregled po slikama
 - demo notebook za odbranu (08), uključujući Grad-CAM vizuelizaciju
 
-#### Blagoje Rozgić
+### Blagoje Rozgić
 - implementacija klasičnog ML pristupa — Random Forest (03): treniranje nad zajedničkim
   osobinama (HOG + histogram boja), ručno podešavanje hiperparametara na validacionom skupu
   (broj stabala, `min_samples_leaf`, `class_weight='balanced'`)
