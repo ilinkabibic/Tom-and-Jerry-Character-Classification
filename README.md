@@ -177,4 +177,9 @@ README, završna analiza projekta i priprema za odbranu predstavljaju zajedničk
 
 ## Zaključak
 
-*(dopuniti po želji)*
+## Zaključak
+
+Zanimljivo, poredak modela nije isti na svakom podskupu podataka: dok je na punom test skupu ResNet18 ubedljivo ispred CNN-a (macro-F1 0.79 naspram 0.55),
+na skupu iz `challenges.csv` (07) CNN ga neznatno nadmašuje (macro-F1 0.87 naspram 0.85, računato za klase koje se stvarno pojavljuju u tom skupu).
+
+Grad-CAM analiza (08) delimično objašnjava zašto: ResNet18 se pri odluci jasno fokusira na sam lik, dok se CNN treniran od nule delom oslanja i na pozadinu/ivice slike.
