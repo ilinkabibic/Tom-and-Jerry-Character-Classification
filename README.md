@@ -157,8 +157,19 @@ Python, scikit-learn, PyTorch, torchvision, OpenCV, scikit-image, pandas, matplo
 - analiza na `challenges.csv` (07): evaluacija sva 4 modela na held-out skupu, pregled po slikama
 - demo notebook za odbranu (08), uključujući Grad-CAM vizuelizaciju
 
-### Blagoje Rozgić
-*(dopuniti)*
+#### Blagoje Rozgić
+- implementacija klasičnog ML pristupa — Random Forest (03): treniranje nad zajedničkim
+  osobinama (HOG + histogram boja), ručno podešavanje hiperparametara na validacionom skupu
+  (broj stabala, `min_samples_leaf`, `class_weight='balanced'`)
+- implementacija dubokog modela — CNN od nule (05): arhitektura konvolucione mreže
+  (3 konvoluciona bloka + potpuno povezani slojevi, dropout), augmentacija podataka,
+  class weights zbog neizbalansiranih klasa, čuvanje najboljeg modela po val macro-F1
+- finalna TEST evaluacija svojih modela (RF i CNN) istom deljenom funkcijom `evaluate_on_test`
+- čuvanje finalnih modela `rf_final.joblib` i `cnn_scratch.pt` u `models/`
+- poređenje modela (06): učitavanje sva 4 sačuvana modela i uporedna evaluacija na istom
+  test skupu (844 slike), uporedna tabela i grafik (bez ponovnog treniranja)
+- doprinos zajedničkim delovima: korišćenje zajedničke podele (`data_split.csv`) i osobina
+  (`features_hog_color.npy`), i dosledna evaluacija (macro-F1) radi poštenog poređenja
 
 README, završna analiza projekta i priprema za odbranu predstavljaju zajednički deo rada.
 
