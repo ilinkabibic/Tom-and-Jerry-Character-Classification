@@ -141,9 +141,39 @@ Potrebni Colab Secrets (`userdata`):
 
 ---
 
+## Potrebni paketi
+
+```bash
+pip install pandas numpy opencv-python scikit-image scikit-learn joblib torch torchvision matplotlib seaborn tqdm kaggle
+```
+
+Google Colab već ima većinu ovih instaliranih (osim `kaggle` i `scikit-image`, koji se instaliraju direktno unutar notebook-ova preko `!pip install`).
+
+---
+
 ## Korišćene tehnologije
 
 Python, scikit-learn, PyTorch, torchvision, OpenCV, scikit-image, pandas, matplotlib, seaborn.
+
+---
+
+## Literatura
+
+1. Tom and Jerry Image Classification dataset — Kaggle
+   https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
+
+2. N. Dalal, B. Triggs, *Histograms of Oriented Gradients for Human Detection*, 2005.
+   (HOG osobine korišćene u klasičnim modelima — 02, 03)
+
+3. K. He et al., *Deep Residual Learning for Image Recognition*, 2016.
+   (ResNet arhitektura, korišćena za transfer learning — 04)
+
+4. R. R. Selvaraju et al., *Grad-CAM: Visual Explanations from Deep Networks via
+   Gradient-based Localization*, 2017.
+   (Grad-CAM vizuelizacija — 08)
+
+5. Dokumentacija: scikit-learn, PyTorch/torchvision
+   https://scikit-learn.org/ , https://pytorch.org/
 
 ---
 
